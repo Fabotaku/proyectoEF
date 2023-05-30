@@ -19,7 +19,7 @@ public class Tarea {
     public virtual Categoria Categoria { get; set; } //1 tarea tiene 1 categoria
 
     [NotMapped]
-    public string Reumen  {get; set;}
+    public string Resumen  {get; set;}
 }
 
 public enum Prioridad {
