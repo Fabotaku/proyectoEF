@@ -4,12 +4,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace proyectoef.Models;
 
 public class Tarea {
-    [Key]
+   // [Key]
     public Guid TareaID { get; set; } //PK
     [ForeignKey("CategoriaID")]
     public Guid CategoriaID { get; set; } //FK
-    [Required]
-    [MaxLength(150)]
+    //[Required]
+    //[MaxLength(150)]
     public string Nombre { get; set; } //Nombre de la tarea
 
     public string Descripcion { get; set; } //Descripcion de la tarea
@@ -18,7 +18,7 @@ public class Tarea {
 
     public virtual Categoria Categoria { get; set; } //1 tarea tiene 1 categoria
 
-    [NotMapped]
+   // [NotMapped]
     public string Resumen  {get; set;}
 }
 
